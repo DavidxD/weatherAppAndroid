@@ -1,4 +1,4 @@
-package com.example.davidrodriguezbaez.weatherapp;
+package com.example.davidrodriguezbaez.weatherapp.tests;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -16,6 +16,10 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+
+    /**
+     * Test that the context of the app is correct
+     */
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
@@ -23,4 +27,5 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.davidrodriguezbaez.weatherapp", appContext.getPackageName());
     }
+
 }

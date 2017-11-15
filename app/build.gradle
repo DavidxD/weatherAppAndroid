@@ -8,7 +8,12 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        testApplicationId "com.example.davidrodriguezbaez.weatherapp.tests"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    testOptions{
+        reportDir = "$project.buildDir/results/report"
+        resultsDir = "$project.buildDir/results/report"
     }
     buildTypes {
         release {

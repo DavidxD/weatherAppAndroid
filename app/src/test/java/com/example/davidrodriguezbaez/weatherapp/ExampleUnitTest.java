@@ -1,9 +1,10 @@
 package com.example.davidrodriguezbaez.weatherapp;
 
+import android.util.Log;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import com.example.davidrodriguezbaez.weatherapp.FragmentWeather;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -15,12 +16,15 @@ public class ExampleUnitTest {
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
     }
+
+    /**
+     * Prove that the convert from Kelvin to Celsius is correct
+     */
     @Test
     public void testConvertKelvinToCelsius() {
-        String actual = FragmentWeather.KelvinToCelsius("277,15");
-        // expected value is 100
+        String actual = FragmentWeather.KelvinToCelsius("277.15"); // expected value is 4
         String expected = "4";
-        // use this method because float is not precise
         assertEquals("Conversion from kelvin to Celsius failed", expected, actual);
     }
+
 }
